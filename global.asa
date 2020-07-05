@@ -1,0 +1,35 @@
+<SCRIPT LANGUAGE=VBScript RUNAT=Server>
+
+Option Explicit
+
+Sub Application_OnStart
+	Application("Caminho") = ""
+End Sub
+	
+Sub Session_OnStart	
+	'***** Inicializa vari�veis da sess�o
+	InicializaVariaveis	
+End Sub
+
+Sub InicializaVariaveis
+	'***** Inicializa variáveis de controle de acesso ao sistema
+	Session.LCID=1046				' Data no formato brasileiro	
+	Session("LoginAtivo") = 0       ' Indica se foi realizado o login do usuario 
+	Session("gvMenu")=""            ' Opções do menu selecionada   
+	Session("gvSubMenu")=""         ' Opções do menu selecionada    
+	Session("gvPagina")=0			' numero da pagina atual da grade
+    Session("gvUsuario")=""         ' login 
+    Session("gvUsuarioID")=0        ' id do usuario   
+    Session("gvNomeUsuario")=""	    ' nome do usuario
+	Session("gvPerfil")=""	        ' perfil
+    Session("gvAtividadePF")="" 
+    Session("gvAtividadePJ")=""
+    Session("gvIDPF")=""
+    Session("gvIDPJ")=""
+    Session("gvProtocolo")=""
+    Session("gvIDPJPF")=""
+	Session("gvSoma")=""
+
+End Sub
+
+</SCRIPT>
