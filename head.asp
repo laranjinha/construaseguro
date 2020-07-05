@@ -3,7 +3,7 @@
     	<meta name="description" content="Site Construa Seguro">
     	<meta name="keywords" content="cadastro, piloto, sebrae, construa, seguro">
     	<meta name="robots" content="index, follow">
-    	<meta name="author" content="Evandro Sousa">
+    	<meta name="author" content="Time 11">
     	<link rel="stylesheet" href="css/style.css">
     	<link rel="icon" href="img/icon.png">
 		<!--[if lt IE 9]>
